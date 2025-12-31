@@ -22,10 +22,18 @@ The model is evaluated through backtesting and exception analysis.
 - Return distribution with VaR and Expected Shortfall
 - QQ plot to assess normality assumptions
 
-## Key Findings
-- VaR captures central risk but underestimates tail losses
-- Exception rate slightly exceeds the theoretical level
-- QQ plot shows fat-tailed behaviour typical of equity returns
+## How to Run
+1. Install dependencies:
+   pip install -r requirements.txt
+2. Open the notebook:
+   dynamic_parametric_var.ipynb
+3. Run all cells sequentially
+
+## Results Summary
+- Rolling VaR closely tracks changes in portfolio volatility
+- Backtesting shows a small number of VaR breaches
+- Exception rate is slightly above the theoretical level, reflecting fat-tailed equity returns
+- QQ plot indicates deviations from normality in the tails
 
 ## Limitations
 - Assumes normally distributed returns
